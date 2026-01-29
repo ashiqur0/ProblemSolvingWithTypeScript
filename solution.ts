@@ -1,4 +1,3 @@
-// Problem 1: formatValue
 const formatValue = (value: string | number | boolean) => {
     if (typeof value === 'string') {
         return value.toUpperCase();
@@ -9,12 +8,10 @@ const formatValue = (value: string | number | boolean) => {
     return !value;
 }
 
-// Problem 2: getLength
 const getLength = (value: string | any) => {
     return value.length;
 }
 
-// Problem 3: Person class
 class Person {
     name: string;
     age: number;
@@ -29,12 +26,10 @@ class Person {
     }
 }
 
-// Problem 4: filterByRating
 const filterByRating = (array: Array<{title: string, rating: number}>) => {
     return array.filter(arr => arr.rating >= 4.0 && arr);
 }
 
-// Problem 5: filterActiveUsers
 type User = {
     id: number,
     name: string,
@@ -46,7 +41,6 @@ const filterActiveUsers = (array: User[]) => {
     return array.filter(arr => arr.isActive && arr);
 }
 
-// Problem 6: printBookDetails
 interface Book {
     title: string,
     author: string,
@@ -58,7 +52,6 @@ const printBookDetails = (book: Book): string => {
     return `Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${book.isAvailable}`;
 }
 
-// Problem 7: getUniqueValues
 function getUniqueValues<T extends string | number>(arr1: T[], arr2: T[]): T[] {
     const result: T[] = [];
 
@@ -86,7 +79,6 @@ function getUniqueValues<T extends string | number>(arr1: T[], arr2: T[]): T[] {
     return result;
 }
 
-// Problem 8: calculateTotalPrice
 type Products = {
     name: string,
     price: number,
